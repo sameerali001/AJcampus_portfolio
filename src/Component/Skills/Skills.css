@@ -1,0 +1,93 @@
+.skills-container {
+    padding: 60px 0;
+    background: transparent; /* Subtle gradient background */
+    position: relative;
+  }
+  
+  .skills-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Slight overlay for better readability */
+    z-index: 0;
+  }
+  
+  .skill-card {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 2px solid #674188; /* Stylish border color */
+    border-radius: 12px; /* Slightly increased border-radius */
+    background: #674188; /* Black background for the card */
+    overflow: hidden; /* Ensures no content spills over rounded corners */
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05) rotate(1deg); /* Subtle rotation for a dynamic effect */
+    box-shadow: 0 10px 20px rgba(91, 12, 12, 0.3);
+    background-color: #674188; /* Slightly lighter black on hover */
+  }
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+  }
+  
+  .card-body {
+    padding: 20px;
+    text-align: center;
+    color: #e9ecef; /* Light text color for readability */
+    background-color:#674188; /* Consistent background color */
+  }
+  
+  .card-img-top {
+    width: 100%;
+    border-bottom: 2px solid #674188; /* Border under image */
+    border-radius: 0; /* No border-radius for images */
+  }
+  
+  .animate-entry {
+    opacity: 0;
+    transform: translateY(30px); /* Increased initial transform */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .animate-entry.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skills-container h2 {
+    margin-bottom: 40px; /* Increased margin for a spacious feel */
+    color: #343a40; /* Darker text color for contrast */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for better readability */
+  }
+  
+  .card-text {
+    color: #e9ecef; /* Light text color for better contrast */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 767px) {
+    .skills-container {
+      padding: 40px 0;
+    }
+  
+    .col-md-4 {
+      margin-bottom: 20px;
+    }
+  }
+  

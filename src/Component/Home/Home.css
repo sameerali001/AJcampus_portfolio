@@ -1,0 +1,73 @@
+.hero-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url('../../../public/Assets/HE.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-section {
+  padding: 20px;
+}
+
+.image-section {
+  padding: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.animate-text {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid #BF2EF0;
+  animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
+  color: #FFFFFF;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.animate-quote {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #FFFFFF;
+  animation: fadeInOut 4s ease-in-out infinite alternate;
+}
+
+.animated-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #4B0082;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.animated-button:hover {
+  background-color: #8A2BE2;
+  transform: scale(1.1);
+}
